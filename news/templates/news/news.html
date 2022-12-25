@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for article in news %}
+
+<div class="container card text-bg-info text-justify mb-3" style="max-width: auto;">
+    <div class="row g-0">
+        <div class="card-body">
+          <h5 class="card-title">{{article.headline}}</h5>
+          <p class="card-text">{{article.body}}</p>
+          <p class="text-muted"><small>{{article.date}}</small></p>
+          <a href="{{article.url_source}}" class="btn btn-primary">Full Article</a>
+        </div>
+    </div>
+  </div>
+ {% endfor %}
+ {% endblock content %}
+
+

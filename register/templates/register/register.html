@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card container mb-3">
+    <div class="card-body">
+      <h5 class="card-title">Register</h5>
+      <p class="card-text">
+        <form action ="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      </p>
+    </div>
+  </div>
+
+  {% endblock content %}
+
+
+
+
+
+
